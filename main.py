@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 from pathlib import Path
 import sys
+import matplotlib.pyplot as plt
 
 url_part = 'https://www.finn.no'
 
@@ -36,9 +37,12 @@ def find_links_page(soup):
     return all_links
 
 
+
+
 def count_words_in_text(text, wordlist):
     # Replace all symbols and studd with whitespace
-    text = re.sub(r'[^\w]', ' ', text)
+    # text = re.sub(r'[^\w]', ' ', text)
+    text = re.sub(r'[,.]', ' ', text)
     counts = dict()
     words = text.split(' ')
     listen = 'goodwords.txt'
@@ -111,7 +115,7 @@ def main():
     if not file.is_file():
         text_til_fil()
 
-    with open('Output.txt', encoding='utf8') as f:
+    with open('Output.txt', encoding='ISO-8859-1') as f:
         text_all_ads = f.read().strip()
 
     counts_dict = count_words_in_text(text_all_ads, wordlist_to_use)
@@ -119,6 +123,12 @@ def main():
     sorted_by_value.reverse()
     for ord in sorted_by_value:
         print(ord)
+
+    plt.bar(range(len(counts_dict)), counts_dict.values(), align='center', color=['black', 'red', 'green', 'blue',
+                                                                                  'cyan'])
+    plt.xticks(range(len(counts_dict)), list(counts_dict.keys()), rotation='vertical')
+
+    plt.show()
 
 
 
