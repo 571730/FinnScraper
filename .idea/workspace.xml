@@ -25,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -33,6 +33,15 @@
                 <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -64,6 +73,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -71,6 +83,7 @@
         <option value="$PROJECT_DIR$/venv/goodwords.txt" />
         <option value="$PROJECT_DIR$/venv/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -79,6 +92,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1044" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -166,12 +180,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550571977530</updated>
-      <workItem from="1550571978753" duration="11629000" />
+      <workItem from="1550571978753" duration="11885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11629000" />
+    <option name="totallyTimeSpent" value="11885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1920" height="1044" extended-state="0" />
@@ -235,6 +249,13 @@
             <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
