@@ -4,8 +4,14 @@ import re
 from pathlib import Path
 import sys
 import matplotlib.pyplot as plt
+import os
 
 url_part = 'https://www.finn.no'
+
+'''
+    Goes through all the found pages on finn
+'''
+
 
 def iterate_pages(pages):
     text = ''
@@ -19,15 +25,31 @@ def iterate_pages(pages):
             text += text_from_soup(soup)
     return text
 
+
+'''
+    Gets all the text from each add
+'''
+
+
 def text_from_soup(soup):
     # u-word-break
     div = soup.find('div', class_='u-word-break')
     return div.get_text().lower()
 
 
+'''
+    Takes a url, returns the soup
+'''
+
+
 def soup_from_page(link):
     response = get(link)
     return BeautifulSoup(response.text, 'html.parser')
+
+
+'''
+    Finds all links on a page, on finn.no
+'''
 
 
 def find_links_page(soup):
@@ -37,6 +59,11 @@ def find_links_page(soup):
     return all_links
 
 
+'''
+    Goes through all the text, counts the occurance of each word.
+    Will also get rid of unwanted words.
+    :return a dictionary
+'''
 
 
 def count_words_in_text(text, wordlist):
@@ -69,6 +96,12 @@ def count_words_in_text(text, wordlist):
 
     return counts
 
+
+'''
+    Checks if a word is on the good-word-list
+'''
+
+
 def check_if_good_word(goodwords, word):
     good_word = False
     for w in goodwords:
@@ -76,6 +109,12 @@ def check_if_good_word(goodwords, word):
             good_word = True
             break
     return good_word
+
+
+'''
+    Checks if a word is on the bad-word-list
+'''
+
 
 def check_if_bad_word(badwords, word):
     in_bad_words = False
@@ -86,11 +125,23 @@ def check_if_bad_word(badwords, word):
 
     return in_bad_words
 
+
+'''
+    Gets a word list
+'''
+
+
 def get_bad_words(list):
     with open(list, encoding='utf8') as f:
         bad_words = f.read().strip()
 
     return bad_words
+
+
+'''
+    Saves all the scraped text to a file, this is done so that you will not have to scrape all
+    the pages each time you want to run the program. It can take some time.
+'''
 
 
 def text_til_fil():
@@ -109,8 +160,15 @@ def text_til_fil():
     with open("Output.txt", "w") as text_file:
         print(f"{text_all_ads}", file=text_file)
 
+
 def main():
-    wordlist_to_use = sys.argv[0]
+    wordlist_to_use = sys.argv[1]
+    fresh_search = 'no delete'
+    if len(sys.argv) == 3:
+        fresh_search = sys.argv[2]
+    if fresh_search == 'fresh':
+        os.remove('Output.txt')
+    print(wordlist_to_use)
     file = Path('Output.txt')
     if not file.is_file():
         text_til_fil()
@@ -120,16 +178,17 @@ def main():
 
     counts_dict = count_words_in_text(text_all_ads, wordlist_to_use)
     sorted_by_value = sorted(counts_dict.items(), key=lambda kv: kv[1])
-    sorted_by_value.reverse()
+    #sorted_by_value.reverse()
     for ord in sorted_by_value:
         print(ord)
 
-    plt.bar(range(len(counts_dict)), counts_dict.values(), align='center', color=['black', 'red', 'green', 'blue',
+    if not wordlist_to_use == 'bad':
+
+        plt.bar(range(len(counts_dict)), counts_dict.values(), align='center', color=['black', 'red', 'green', 'blue',
                                                                                   'cyan'])
-    plt.xticks(range(len(counts_dict)), list(counts_dict.keys()), rotation='vertical')
-
-    plt.show()
-
+        plt.xticks(range(len(counts_dict)), list(counts_dict.keys()), rotation='vertical')
+        plt.show()
 
 
-main()
+if __name__ == '__main__':
+    main()

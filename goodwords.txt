@@ -75,3 +75,6 @@ subversion
 mercurial
 cvs
 mercurial
+iot
+systemutvikler
+windows
