@@ -145,6 +145,21 @@ def get_bad_words(list):
 
 
 def text_til_fil():
+    links_all_pages = get_all_links_finn()
+    links_to_file(links_all_pages)
+    print('Found', len(links_all_pages), 'pages of IT job listings!')
+    text_all_ads = iterate_pages(links_all_pages)
+    with open("Output.txt", "w") as text_file:
+        print(f"{text_all_ads}", file=text_file)
+
+
+def links_to_file(links):
+    with open("Links.txt", "w") as text_file:
+        for item in links:
+            text_file.write("%s\n" % item)
+
+
+def get_all_links_finn():
     start_url = 'https://www.finn.no/job/fulltime/search.html?occupation=0.23'
     response = get(start_url)
     main_page_soup = BeautifulSoup(response.text, 'html.parser')
@@ -155,10 +170,7 @@ def text_til_fil():
         soup = soup_from_page(link)
         links_all_pages.append(find_links_page(soup))
 
-    print('Found', len(links_all_pages), 'pages of IT job listings!')
-    text_all_ads = iterate_pages(links_all_pages)
-    with open("Output.txt", "w") as text_file:
-        print(f"{text_all_ads}", file=text_file)
+    return links_all_pages
 
 
 def main():
