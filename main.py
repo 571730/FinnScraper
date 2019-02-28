@@ -5,8 +5,34 @@ from pathlib import Path
 import sys
 import matplotlib.pyplot as plt
 import os
+import threading
 
 url_part = 'https://www.finn.no'
+
+'''
+    Thread-class used to scrape pages faster.
+    It will be given the url to a page, then it go through all the links
+    saving the text from all ads in class variables.
+'''
+
+
+class MyThread(threading.Thread):
+    def __init__(self, threadID, page):
+        threading.Thread.__init__(self)
+        self.threadID = threadID
+        self.page = page
+        self.text = ''
+        self.links = []
+
+    def run(self):
+        print("Starting thread", self.threadID)
+        for link in self.page:
+            url = url_part + link['href']
+            self.links.append(url)
+            soup = soup_from_page(url)
+            self.text += text_from_soup(soup)
+        print("Thread", self.threadID, "is done!")
+
 
 '''
     Goes through all the found pages on finn
@@ -16,13 +42,27 @@ url_part = 'https://www.finn.no'
 def iterate_pages(pages):
     text = ''
     counter = 0
+    links = []
+    threads = []
     for page in pages:
         counter += 1
-        print("Getting text from page", counter)
-        for link in page:
-            url = url_part + link['href']
-            soup = soup_from_page(url)
-            text += text_from_soup(soup)
+        thread = MyThread(counter, page)
+        threads.append(thread)
+        thread.start()
+        # print("Getting text from page", counter)
+        # for link in page:
+        #     url = url_part + link['href']
+        #     links.append(url)
+        #     soup = soup_from_page(url)
+        #     text += text_from_soup(soup)
+    # Waiting for all threads to finish
+    for t in threads:
+        t.join()
+    # Collecting the data from all threads
+    for t in threads:
+        links.extend(t.links)
+        text += t.text
+    links_to_file(links)
     return text
 
 
@@ -146,7 +186,7 @@ def get_bad_words(list):
 
 def text_til_fil():
     links_all_pages = get_all_links_finn()
-    links_to_file(links_all_pages)
+    # links_to_file(links_all_pages)
     print('Found', len(links_all_pages), 'pages of IT job listings!')
     text_all_ads = iterate_pages(links_all_pages)
     with open("Output.txt", "w") as text_file:
@@ -179,7 +219,10 @@ def main():
     if len(sys.argv) == 3:
         fresh_search = sys.argv[2]
     if fresh_search == 'fresh':
-        os.remove('Output.txt')
+        try:
+            os.remove('Output.txt')
+        except FileNotFoundError:
+            print('Output file not there')
     print(wordlist_to_use)
     file = Path('Output.txt')
     if not file.is_file():
@@ -190,14 +233,13 @@ def main():
 
     counts_dict = count_words_in_text(text_all_ads, wordlist_to_use)
     sorted_by_value = sorted(counts_dict.items(), key=lambda kv: kv[1])
-    #sorted_by_value.reverse()
+    # sorted_by_value.reverse()
     for ord in sorted_by_value:
         print(ord)
 
     if not wordlist_to_use == 'bad':
-
         plt.bar(range(len(counts_dict)), counts_dict.values(), align='center', color=['black', 'red', 'green', 'blue',
-                                                                                  'cyan'])
+                                                                                      'cyan'])
         plt.xticks(range(len(counts_dict)), list(counts_dict.keys()), rotation='vertical')
         plt.show()
 
