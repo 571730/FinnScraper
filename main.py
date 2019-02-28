@@ -30,10 +30,6 @@ class myThread(threading.Thread):
             self.text += text_from_soup(soup)
             threadLock.release()
 
-        # Get lock to synchronize threads
-        threadLock.acquire()
-
-        # Free lock to releas
 
 threadLock = threading.Lock()
 
@@ -46,14 +42,20 @@ def iterate_pages(pages):
     text = ''
     counter = 0
     links = []
+    threads = []
     for page in pages:
         counter += 1
-        print("Getting text from page", counter)
-        for link in page:
-            url = url_part + link['href']
-            links.append(url)
-            soup = soup_from_page(url)
-            text += text_from_soup(soup)
+        thread = myThread(counter, page, text, links)
+        threads.append(thread)
+        thread.start()
+        # print("Getting text from page", counter)
+        # for link in page:
+        #     url = url_part + link['href']
+        #     links.append(url)
+        #     soup = soup_from_page(url)
+        #     text += text_from_soup(soup)
+    for t in threads:
+        t.join()
     links_to_file(links)
     return text
 
@@ -211,7 +213,10 @@ def main():
     if len(sys.argv) == 3:
         fresh_search = sys.argv[2]
     if fresh_search == 'fresh':
-        os.remove('Output.txt')
+        try:
+            os.remove('Output.txt')
+        except FileNotFoundError:
+            print('Output file not there')
     print(wordlist_to_use)
     file = Path('Output.txt')
     if not file.is_file():
