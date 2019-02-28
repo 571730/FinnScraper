@@ -1,3 +1,14 @@
-requests
-beautifulsoup4
-matplotlib
+beautifulsoup4==4.7.1
+certifi==2018.11.29
+chardet==3.0.4
+cycler==0.10.0
+idna==2.8
+kiwisolver==1.0.1
+matplotlib==3.0.2
+numpy==1.16.1
+pyparsing==2.3.1
+python-dateutil==2.8.0
+requests==2.21.0
+six==1.12.0
+soupsieve==1.8
+urllib3==1.24.1

@@ -6,6 +6,198 @@
 
 
 
+    
+    .extended-profile-container .clickable-for-collapsible {
+        cursor: pointer;
+    }
+    .extended-profile-container.non-collapsible .clickable-for-collapsible {
+        cursor: inherit;
+    }
+    .extended-profile-container.non-collapsible .plus-icon {
+        display: none;
+    }
+    .extended-profile-container .expandable-area {
+        display: none;
+    }
+    .extended-profile-container.non-collapsible .expandable-area,
+    .extended-profile.open .expandable-area {
+        display: block;
+    }
+    .extended-profile-container.collapsible .hide-collapsible {
+        display: none;
+    }
+    .extended-profile-container.collapsible .hide-collapsible {
+        display: none;
+    }
+    .extended-profile-container.collapsible .company-logo-container {
+        padding-top: 45px;
+    }
+    .extended-profile-container .company-logo-top-container {
+        height: 45px;
+    }
+    .extended-profile-container .company-logo-container .company-logo {
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .extended-profile-container.collapsible .company-logo-container .company-logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .extended-profile-container.non-collapsible .company-logo-container {
+        display: none;
+    }
+
+
+    
+    .extended-profile .extended-profile-plus-container {
+        position: relative;
+    }
+    .extended-profile .plus-icon {
+        position: absolute;
+        right: 10px;
+        top: 9px;
+    }
+    .extended-profile.open .plus-icon .line-y {
+        display: none;
+    }
+    .extended-profile a.button.actionlink {
+        display: block;
+    }
+    .extended-profile ul.last-non-bordered li:last-child {
+        border-bottom: none;
+    }
+
+    
+    .extended-profile {
+        background-color: #ffffff;
+        color: #788188;
+    }
+    .extended-profile a {
+        color: #788188;
+    }
+    .extended-profile .extended-profile-logo-container {
+        background-color: ;
+        color: ;
+        text-align: center;
+    }
+
+        .plus-icon svg .circle { fill: #ffffff;       }
+        .plus-icon svg .line   { fill: #5351bc; }
+
+    .extended-profile .extended-profile-slogan-container {
+        background-color: #5351bc;
+        color: #ffffff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 12px 5px;
+    }
+    .extended-profile .contact img {
+        height: 85px;
+        border: 1px solid rgba(120, 129, 136, 0.5);
+    }
+    .extended-profile .contact .name {
+        margin-top: 5px;
+    }
+    .extended-profile .contact .title,
+    .extended-profile .followers {
+        color: rgba(120, 129, 136);
+    }
+    .extended-profile ul li {
+        border-bottom-color: rgba(120, 129, 136, 0.2);
+    }
+    .extended-profile a.button.actionlink {
+        background-color: #5351bc;
+        background: #5351bc;
+        border-color: #5351bc;
+        color: #ffffff;
+    }
+    .extended-profile a.button.actionlink:hover {
+        background-color: #ffffff;
+        color: #5351bc;
+    }
+    .extended-profile .extended-profile-box {
+        background-color: #788188;
+        color: #ffffff;
+    }
+    .extended-profile .extended-profile-box a {
+        color: #ffffff;
+    }
+
+    .extended-profile-background {
+        background-position: center;
+        background-size: cover;
+        background-image: url('https://images.finncdn.no/dynamic/1280w/2017/5/vertical-5/16/5/35d/02c/20-/3a1/c-1/1e7/-9c/8d-/cb2/000/35a/_536316577.png');
+        padding-top: 38.27%;
+
+    }
+
+    @media (max-width: 767px) {
+
+        /*
+            a hack setting these border colors to something similar to the body background. this
+            will not work well when changing global styling :(
+        */
+        .non-collapsible .extended-profile,
+        .extended-profile.open {
+            border-bottom: 3px solid #e9eff5;
+        }
+        .non-collapsible .extended-profile {
+            border-top: 3px solid #e9eff5;
+        }
+
+    }
+
+
+
+
+
+
+
+
+hvilke muligheter finnes hos oss?
+
+
+les mer.
+
+
+
+
+
+
+
+
+
+
+
+les om arbeidsplassen
+
+
+
+
+
+                    flere stillinger
+                        
+
+student eller nyutdannet?
+erfaren?
+
+jobb i evry
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,16 +226,107 @@ kommentar til annonsen
 
 
 
-er du vår nye webredaktør?
+shape the future of banking, today - test manager
 
 
 
 arbeidsgiver
-pensjonistforbundet
-stillingstittel
-webredaktør
+evry
 sted
-oslo sentrum
+fornebu/oslo - bergen - trondheim
+frist
+
+                14.03.2019
+varighet
+fast
+
+
+
+
+            bli kjent med evry as
+
+
+
+
+are you ready for new job challenges and want to work on large, exciting projects?     digitalisation, rapid changes in customer preferences and an increasing level of operational regulations are reshaping the banking industry. every day, our product developers, it architects, engineers, industry specialists and designers solve challenges and generate new ideas that change and how banks operate and compete.      evry is growing and we have large project deliveries ahead of us. we are looking for talented people who want to join our in-house teams in developing customer-centric and feature-rich solutions for the leading banks in the nordic region. we need people with the right skills - not only in terms of education and experience, but also in terms of talent, attitude and teamwork skills. therefore, we are looking for candidates with varied backgrounds and expertise.     we invite you to be part of evry's truly diverse team of about 1,400 people working with many of the leading banks in the nordics. you will participate in the execution of strategically important projects in collaboration with cool, supportive and highly skilled colleagues across the nordics.      description of tasks: plan, design and maintain test strategies and test plans lead test team consisting of one or more participants agile or traditional implementation depending on project setup of automated testing    quali?fcations and work experience: higher relevant technical education (bachelor or equivalent) minimum 4 years' experience in test management, preferably with a focus on it development and digitization istqb certifi?cation or equivalent theoretical test knowledge good knowledge of various test methods- and tools knowledge of automated testing good communication skills in english both written and spoken knowledge of one of the nordic languages   personal characteristics/competences: you co-operate well with others and share knowledge and information. you also show organizational awareness; understand the organizations informal rules and structures you act on own initiative, make things happen and you execute plans with commitment and determination you demonstrate specialist knowledge and expertise in your own area and you quickly understand and analyse complex issues and problems    we offer: exciting and challenging tasks in a market leading growth company good opportunities with professional development in evry academy - a private academy for professional development internal network: young professionals, female@evry.com, company sports, flexible working place strong academic environment that will give you challenges and knowledge so you can quickly become part of the team flexible working hours good pension and insurance plans competitive conditions    workplace: oslo, bergen or trondheim.    please feel free to apply in english or any of the scandidavian languages.     we will interview candidates continuously, and look forward to hearing from you!      
+
+
+
+
+
+
+sektor
+privat
+sted
+1360 fornebu
+bransje
+it
+stillingsfunksjon
+it utvikling / qa/testing
+
+
+
+nøkkelord
+
+            test, istqb, testleder, test manager
+
+
+
+rapportér annonse
+
+
+finn-kode
+139326374
+sist endret
+31. jan 2019 14:27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
+utviklere   vil dere bli hentet?
+
+
+
+arbeidsgiver
+møller mobility group
+stillingstittel
+utviklere
+sted
+frysjaveien 31b
 frist
 
                 snarest
@@ -54,92 +337,36 @@ fast
 
 
 
-vil du være med og lage landets beste nettsted for en målgruppe i vekst, nemlig landets pensjonister? har du kompetanse og erfaring som webredaktør for et nettsted? hvis du i tillegg har gode samarbeidsevner, og samtidig liker å jobbe selvstendig, kan det være deg som blir pensjonistforbundets nye webredaktør.webredaktøren vil få ansvar for å drifte og videreutvikle pensjonistforbundets nettsted. den vi ansetter brenner for å lage godt innhold, slik at vi treffer målgruppenes behov. i tillegg til pensjonistene selv, er det viktig for oss å nå ut til beslutningstakere og andre interessenter. du trives med å samarbeide med andre fagpersoner om å identifisere nyttig innhold og presentere det på en forståelig og godt strukturert måte. du er i tillegg opptatt av kontinuerlig forbedring og videreutvikling, og du forstår hvordan web kan brukes som strategisk verktøy og somkommunikasjonskanal.ansvarsområder og utvalgte arbeidsoppgaver:være prosjektleder for videreutvikling av vårt nettsted, kravspesifisering, bestilling og samarbeid med ekstern leverandørerlage, publisere, drifte og videreutvikle innhold på nettstedet, i samarbeid med våre fagpersonerintern rådgiver i alle spørsmål og problemstillinger knyttet til web og sosiale medierovervåke og analysere bruken av nettstedet, og på bakgrunn av det identifisere endrings- og utviklingsbehovgjennomføre målinger som kan bidra til optimalisering av våre løsninger kvalifikasjoner:høyere relevantutdanning, fortrinnsvis kommunikasjons- eller webfagligarbeidet som webredaktør i minst 2 år, og har erfaring med sosiale medier, gjerne i en organisasjonerfaring som prosjektleder er en fordelgod kompetanse om brukerrettet innhold, klarspråk og webstatistikkgod forståelse for bruk av ulike digitale kanaler, og strategisk bruk av webha kjennskap til google analytics og seomeget gode kommunikasjonsevner på norsk (og engelsk), både muntlig og skriftligpersonlige egenskaper:gode samarbeidsevnerserviceinnstilt og løsningsorientertanalytisk og strukturertinitiativrikgrundigstor gjennomføringsevnevi tilbyr:mulighet til å arbeide i en stilling som favner politikk og kommunikasjonvarierte og spennende arbeidsoppgaverhyggelig arbeidsmiljøgode pensjons-, lønns- og forsikringsordningersommertidsordningstillingen rapporterer til generalsekretæren. kommunikasjonssjefen vil være faglig ansvarlig. arbeidsspråket er norsk.for mer informasjon om stillingen ta kontakt med vår rådgiver lars hagen (mob. 90 999 000) i nye ansatte as, eller generalsekretær i pensjonistforbundet harald olimb norman (mob 95 75 14 39) alle henvendelser blir behandlet konfidensielt og i henhold til gjeldende regler. 
+mobilitet handler ikke lengre om bare hestekrefter, dreiemoment eller dekk. fremtiden handler mer om transportautonomi, bærekraft, valgmuligheter og tilgjengelighet. derfor investerer vi tungt i digitalisering, nye plattformer og fremtidsteknologi. lyst til å bli med på reisen? vi ser nemlig etter utviklere. bli mer inspirert på https://moller.no/no/karriere/moller-it-digital-1som utvikler i møller digital vil du få jobbe med utvikling og forvaltning av komplekse og virksomhetskritiske systemer. du vil få varierte oppgaver og mye ansvar, og jobbe i team med ansatte og innleide ressurser.vi ønsker søknad fra deg som er fullstack-utvikler, enten du har noen års erfaring eller er nyutdannet. har du erfaring som, eller interesse for roller som tech-lead eller scrum master, så er det også ting det er mulig å få bidratt med hos oss.les mer på: https://moller.no/no/karriere/ledige-stillinger?rmpage=job&rmjob=1242
 
 
 
 
 om arbeidsgiveren
-pensjonistforbundet er norges største interesseorganisasjon for pensjonister og den ledende aktøren i norsk eldrepolitikk.  vi har mer enn 250 000 medlemmer spredt over hele landet. pensjonistforbundet har i dag 18 ansatte og holder til i tidsriktige kontorlokaler meget sentralt i oslo.
+møller mobility group er et familieeid selskap og en ledende aktør i nordisk bilbransje. selskapet er engasjert innen import, forhandlervirksomhet og finansiering i norge, sverige og baltikum. for nærmere informasjon, se www.moller.no.møller digital as er et selskap i møller mobility group og leverer it-tjenester til forhandlere og import-leddet i alle de fem landene møller mobility group opererer. i takt med økende digitalisering av bilbransjen, leverer møller digital også stadig nye digitale tjenester til møller mobility groups sluttkunder.
 
 
 
 
-søknad merkes
-webredaktør
-nettverk
-
-facebook
-linkedin
-
-tiltredelse
-snarest
 sektor
-organisasjoner
+privat
+antall stillinger
+5
 sted
-torggata 15,
-0181 oslo
+frysjaveien 31b,
+0884 oslo
 bransje
-organisasjoner
+bil, kjøretøy og verksted,
+it,
+bil- og bildelproduksjon
 stillingsfunksjon
-it utvikling / utvikler (generell),
-design / web
+it utvikling / utvikler (generell)
 
 
 
 nøkkelord
 
-            webredaktør, innholdsansvarlig, web, digital, redaktør
-
-
-
-
-
-
-
-
-
-                                        
-                                        (1/3)
-                                    
-
-
-
-
-
-
-                                        
-                                        (2/3)
-                                    
-
-
-
-
-
-
-                                        
-                                        (3/3)
-                                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            utvikler, mobilitet, it
 
 
 
@@ -147,9 +374,9 @@ rapportér annonse
 
 
 finn-kode
-138312108
+141374641
 sist endret
-21. jan 2019 11:17
+28. feb 2019 12:13
 
 
 
@@ -7829,6 +8056,118 @@ sist endret
 
 
 
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
+don't become a dinosaur! join us and work with the latest technologies on a global product
+
+
+
+arbeidsgiver
+tidal music as
+stillingstittel
+senior java developer- subscription platform
+sted
+oslo
+frist
+
+                snarest
+varighet
+fast
+
+
+
+
+            bli kjent med tidal music as
+
+
+
+
+are you tired of coming back from conferences not being able to use the technologies you have learned about? tidal is using them already. our stack currently includes aws, spring boot, spring cloud, postgres, dynamodb, kinesis, lambda, and many other technologies. we constantly evaluate the latest technologies and we have the freedom to choose the right ones to solve the task. you will have the possibility to imprint your craftsmanship in our product and your work will be seen by millions of users every week.we are looking for more experienced java developers to join our user team in oslo. do you want to work with a team of highly skilled developers who are passionate about coding? do you enjoy working with smart people and learning new things? in this role you will belong to a diverse, energetic group of highly motivated and talented developers who support each other and work together to solve problems in an agile manner. the team enjoys experimenting with new solutions and are always open to innovative ways of improving the product. we focus on teamwork and creativity, and all ideas count!  some of your tasks as a java developer at tidal: together with the team, you will: propose and implement new solutions, define requirements for partner integrations, design scalable systems and implement new features that need to be supported by backend.you will work with payments, signup, user subscriptions, and partner integrationsthe team ensures continuous delivery directly to the public, and we need to be able to work under tight deadlines when required. we always aim to use the newest technology and we make sure to implement our solutions in the best way possible.  what we are looking for in our new developer: you are an experienced java developer and you are eager to work with the latest java technologiesyou have knowledge of and are excited about api driven developmentwe consider it an advantage if you have experience with scalable and high traffic systems, microservices, payments and system integrations.you need to be fluent in english since this is our company language who you are: you are a self-driven and motivated developer who enjoys working in a team. your best work is done in collaboration with your team members.you pay attention to detail, you are reliable and you are pragmatic about your workyou are eager to learn new things and creative in your approach to new solutions. you are also genuinely passionate about technology and interested in experimenting in your work as a developer.  we offer: technology: you will work in a tech-oriented environment with a team of talented developers who are passionate about technology.our office: is centrally located in oslo. we have a subsidized canteen and a barista with great coffee in the building. our office is within short walking distance to public transportation, cafés, parks, restaurants, and gymsdiverse team: our strength is diversity, and we are proud to say that our team represents more than 30 different nationalities.stay energized: we provide snacks, fruit, and food at the officesharing ideas: tidal tech talks and show and tell sessions in-housesocial: we host small concerts in the office and we have a summer/ christmas party. we also have a small beer-brewer team that serves end- of month beer at the office. 
+
+
+
+
+om arbeidsgiveren
+tidal is a global music and entertainment platform that brings artists and fans together through unique music and content experiences and is currently available in 53 countries.tidal has over 60 million songs in the catalog and over 240,000 high quality videos, offering passionate music fans both a premium and high fidelity cd sound quality, along with high resolution video, and expertly curated content.
+
+
+
+
+nettverk
+
+facebook
+linkedin
+twitter
+
+tiltredelse
+snarest
+sektor
+privat
+antall stillinger
+4
+sted
+lakkegata 53,
+0187 oslo
+bransje
+it - programvare,
+it,
+musikk
+stillingsfunksjon
+it utvikling / systemarkitekt,
+it utvikling / database,
+it utvikling / utvikler (generell)
+
+
+
+nøkkelord
+
+            java, it, cloud, aws, software
+
+
+
+rapportér annonse
+
+
+finn-kode
+140918304
+sist endret
+26. feb 2019 14:20
+
+
+
+
+
+
+
+
+
+
     
     .extended-profile-container .clickable-for-collapsible {
         cursor: pointer;
@@ -8111,134 +8450,6 @@ finn-kode
 141233441
 sist endret
 26. feb 2019 13:39
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-protan as søker en applikasjonsforvalter it og en it support tekniker
-
-
-
-arbeidsgiver
-protan as
-stillingstittel
-applikasjonsforvalter it og it support tekniker
-sted
-drammen
-frist
-
-                snarest
-varighet
-fast
-
-
-
-
-
-applikasjonsforvalter itprotan it har ansvaret for å utvikle, forvalte og drifte konsernets erp-system (m3) og tilhørende applikasjoner som støtter opp mot erp løsningen. applikasjonsforvalter vil i nært samarbeid med de ulike forretningsområdene i protan, sammen med it-sjef, bidra til å øke utnyttelsen av vårt erp-system ytterligere.vi søker en person som vil være med i et it team som ønsker å være en bidragsyter for forretningen slik at de når målene de har satt.du vil stå for opplæring av intern it avdeling/selskapet og utvikle vår applikasjonsendringsløsning.ditt overordnede ansvar vil være å forvalte de viktigste it-applikasjonene og sørge for best mulig bruk av våre applikasjoner.du motiveres av muligheten til å påvirke bedriftens digitale løp.  det er viktig at du evner å ta styring i etablering av rutiner og prosesser.som person er du robust, strukturert og systematisk med høy gjennomføringsevne og pågangsmot.vi kan tilby deg:utvikling og fremtidsrettede løsningerforvaltning av eksisterende applikasjoner og rammeverkkundesamarbeid (internt og eksternt) - evne å omsette bruker- og forretningsbehov til gode løsningerutfordrende arbeidsoppgaver, faglig utvikling og dyktige kollegaerkonkurransedyktige betingelserunik mulighet til å påvirke faglig innhold i stillingenarbeid i et internasjonalt og markedsledende konsern i stor positiv utviklingstor frihet under ansvar it support teknikerit support er vårt ansikt ut mot interne og eksterne brukere.  vi søker etter en ny dyktig medarbeider som kan hjelpe oss med å holde våre brukere fornøyde.du vil veksle mellom førstelinje og andrelinje brukerstøtte, og naturlig delta i oppbygging og videreutvikling av enhetens kunnskapsbase.  du vil også kunne delta i en del prosjekter ved behov og gjennomføre opplæring av applikasjonene som vi benytter.vi søker en person som vil være med i et it team som ønsker å være en bidragsyter for forretningen slik at de når målene de har satt.du følger prosedyrer og bruker saksbehandlingssystemet aktivt, å dokumentere det du gjør er noe du tar som en selvfølge.du motiveres av muligheten til å påvirke bedriftens digitale løp.  det er viktig at du evner å ta styring i etablering av rutiner og prosesser.som person er du robust, strukturert og systematisk med høy gjennomføringsevne og pågangsmot.vi kan tilby degutfordrende arbeidsoppgaver, faglig utvikling og dyktige kollegaerkonkurransedyktige betingelserunik mulighet til å påvirke faglig innhold i stillingenarbeid i et internasjonalt og markedsledende konsern i stor positiv utviklingstor frihet under ansvar 
-
-
-
-
-om arbeidsgiveren
-protan er et norsk industrikonsern som er verdensledende innen membranteknologi. bedriften utvikler og produserer membraner, tak-systemer, ventilasjonssystemer og tekniske tekstiler. omsetningen var samlet på over 1,6 milliarder i 2018, og selskapet har 750 ansatte i 15 land.hovedkontoret ligger i drammen. det største forretningsområdet er tak og membraner. i tillegg leverer protan høykvalitetsmembraner for våtrom og terrasser, og de gjennomfører radonsikring for nybygg og rehabilitering. det er også utviklet spesialløsninger for designtak, cool roof og grønne tak.
-
-
-
-
-søknad merkes
-it
-nettverk
-
-facebook
-linkedin
-
-tiltredelse
-i henhold til nærmere avtale
-sektor
-privat
-antall stillinger
-2
-sted
-baches vei 1,
-3413 lier
-lønn
-i henhold til avtale
-bransje
-industri og produksjon,
-bygg og anlegg
-stillingsfunksjon
-it drift og vedlikehold / it-support,
-it drift og vedlikehold / drift/operations,
-it utvikling / utvikler (generell)
-
-
-
-nøkkelord
-
-            it, m3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rapportér annonse
-
-
-finn-kode
-139610592
-sist endret
-25. feb 2019 09:28
 
 
 
@@ -15461,6 +15672,290 @@ sist endret
 
 
 
+    
+    .extended-profile-container .clickable-for-collapsible {
+        cursor: pointer;
+    }
+    .extended-profile-container.non-collapsible .clickable-for-collapsible {
+        cursor: inherit;
+    }
+    .extended-profile-container.non-collapsible .plus-icon {
+        display: none;
+    }
+    .extended-profile-container .expandable-area {
+        display: none;
+    }
+    .extended-profile-container.non-collapsible .expandable-area,
+    .extended-profile.open .expandable-area {
+        display: block;
+    }
+    .extended-profile-container.collapsible .hide-collapsible {
+        display: none;
+    }
+    .extended-profile-container.collapsible .hide-collapsible {
+        display: none;
+    }
+    .extended-profile-container.collapsible .company-logo-container {
+        padding-top: 45px;
+    }
+    .extended-profile-container .company-logo-top-container {
+        height: 45px;
+    }
+    .extended-profile-container .company-logo-container .company-logo {
+        
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .extended-profile-container.collapsible .company-logo-container .company-logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .extended-profile-container.non-collapsible .company-logo-container {
+        display: none;
+    }
+
+
+    
+    .extended-profile .extended-profile-plus-container {
+        position: relative;
+    }
+    .extended-profile .plus-icon {
+        position: absolute;
+        right: 10px;
+        top: 9px;
+    }
+    .extended-profile.open .plus-icon .line-y {
+        display: none;
+    }
+    .extended-profile a.button.actionlink {
+        display: block;
+    }
+    .extended-profile ul.last-non-bordered li:last-child {
+        border-bottom: none;
+    }
+
+    
+    .extended-profile {
+        background-color: #ffffff;
+        color: #788188;
+    }
+    .extended-profile a {
+        color: #788188;
+    }
+    .extended-profile .extended-profile-logo-container {
+        background-color: ;
+        color: ;
+        text-align: center;
+    }
+
+        .plus-icon svg .circle { fill: #ffffff;       }
+        .plus-icon svg .line   { fill: #5351bc; }
+
+    .extended-profile .extended-profile-slogan-container {
+        background-color: #5351bc;
+        color: #ffffff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 12px 5px;
+    }
+    .extended-profile .contact img {
+        height: 85px;
+        border: 1px solid rgba(120, 129, 136, 0.5);
+    }
+    .extended-profile .contact .name {
+        margin-top: 5px;
+    }
+    .extended-profile .contact .title,
+    .extended-profile .followers {
+        color: rgba(120, 129, 136);
+    }
+    .extended-profile ul li {
+        border-bottom-color: rgba(120, 129, 136, 0.2);
+    }
+    .extended-profile a.button.actionlink {
+        background-color: #5351bc;
+        background: #5351bc;
+        border-color: #5351bc;
+        color: #ffffff;
+    }
+    .extended-profile a.button.actionlink:hover {
+        background-color: #ffffff;
+        color: #5351bc;
+    }
+    .extended-profile .extended-profile-box {
+        background-color: #788188;
+        color: #ffffff;
+    }
+    .extended-profile .extended-profile-box a {
+        color: #ffffff;
+    }
+
+    .extended-profile-background {
+        background-position: center;
+        background-size: cover;
+        background-image: url('https://images.finncdn.no/dynamic/1280w/2017/5/vertical-5/16/5/35d/02c/20-/3a1/c-1/1e7/-9c/8d-/cb2/000/35a/_536316577.png');
+        padding-top: 38.27%;
+
+    }
+
+    @media (max-width: 767px) {
+
+        /*
+            a hack setting these border colors to something similar to the body background. this
+            will not work well when changing global styling :(
+        */
+        .non-collapsible .extended-profile,
+        .extended-profile.open {
+            border-bottom: 3px solid #e9eff5;
+        }
+        .non-collapsible .extended-profile {
+            border-top: 3px solid #e9eff5;
+        }
+
+    }
+
+
+
+
+
+
+
+
+hvilke muligheter finnes hos oss?
+
+
+les mer.
+
+
+
+
+
+
+
+
+
+
+
+les om arbeidsplassen
+
+
+
+
+
+                    flere stillinger
+                        
+
+student eller nyutdannet?
+erfaren?
+
+jobb i evry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
+vil du være med å forme fremtidens bank? vi ser etter .net-utviklere!
+
+
+
+arbeidsgiver
+evry
+sted
+fornebu/oslo
+frist
+
+                05.03.2019
+varighet
+fast
+
+
+
+
+            bli kjent med evry as
+
+
+
+
+er du klar for nye utfordringer og har lyst til å jobbe med utvikling i store og spennende prosjekter?    digitalisering, stadige endringer i kundenes behov og økte reguleringer er med på å forme bankindustrien. hver dag jobber våre produktutviklere, it-arkitekter, ingeniører, bransjeeksperter og designere med å løse utfordringer og utvikle nye ideer som vil endre hvordan bankene opererer og konkurrerer.     evry vokser - og vi har store prosjektleveranser foran oss. vi ser etter flinke personer som har lyst til å være en del av vårt in-house team som utvikler kundenære og funksjonelle løsninger for de ledende bankene i norden. vi trenger folk som har de rette egenskapene - ikke bare med hensyn til utdanning og erfaring, men også i form av holdning, motivasjon og samarbeidsevner. derfor ønsker vi oss personer med variert bakgrunn og kompetanse med på laget.      vi ser etter .net-utviklere som vil være med å utvikle våre to systemer portwin og specialised lending (sls).vi inviterer deg til å bli en del av vårt mangfoldige team på 1400 svært dyktige mennesker - du vil få være med på å gjennomføre strategisk viktige prosjekter for ledende banker i norden.       portwin   vi opplever for tiden stor suksess med vår treasury-løsning  portwin  og har mange spennende og krevende oppdrag foran oss. portwin er en løsning for registrering og overvåkning av bankpapirer, valutakontrakter, innskudd, lån og derivater. løsningen gir banken en porteføljeoversikt over bankens produkter innenfor treasuryområdet.  vi ønsker nå å styrke teamet vårt med en systemutvikler som har interesse for finans. du har gjerne kunnskap om finansielle instrumenter, treasury-løsninger og porteføljesystemer, eller så har du et ønske om å lære. som portwin-utvikler vil du jobbe med utvikling både front-end og server-side, i tillegg til utvikling i objektorienterte miljøer (java, .net).     kvalifikasjoner og personlige egenskaper:  vi ser etter en utvikler som har kjennskap til finansløsninger, treasuryløsninger og porteføljesystemer, eller en som er interessert i å lære mer om disse områdene. du bør ha interesse for bank- og finansområdet, og relevant utdannelse. du er komfortabel med å jobbe med både kunder og kollegaer, og har evnen til å jobbe i et hektisk miljø. du liker å jobbe med varierte og komplekse arbeidsoppgaver, og samarbeider godt i et team for å finne de beste løsningene. stillingen krever at du kan snakke og skrive flytende norsk.     specialised lending (sls)   sls er et lån- og garantistyringssystem som håndterer bedriftsprodukter, multi-valuta lån og detaljhandelslån. løsningen selges til internasjonale og norske banker, og vi har for tiden flere pågående prosjekter. vår teknologiplattform er microsoft-basert (.net, c#), javascript og sql server. fokusområder er ux, webtjenester, databaseprogrammering og skyutvikling.    kvalifikasjoner og personlige egenskaper:   vi ser etter en dyktig utvikler med erfaring fra objektorientert programmering, og interesse i teknologiene nevnt ovenfor. du bør ha en interesse for bank og finans, og ha relevant utdanning. du er komfortabel med å jobbe med både kunder og kollegaer, og har evnen til å jobbe i et hektisk miljø. du liker å jobbe med varierte og komplekse arbeidsoppgaver, og samarbeider godt i team for å finne de beste løsningene. stillingen krever at du kan snakke og skrive flytende norsk       vi tilbyr  spennende og utfordrende oppgaver i et markedsledende selskap i vekst gode muligheter for faglig utvikling i evry academy interne nettverk: young professionals, female@evry, idrettsforeninger og mye mer et solid faglig miljø som vil gi deg utfordringer og kunnskap slik at du raskt blir en del av laget gode pensjons- og forsikringsordninger  fleksibel arbeidstid, konkurransedyktige betingelser fristen for å søke på stillingene er 4. mars, men kandidater vil bli intervjuet fortløpende.     har du spørsmål til stillingene?    for spørsmål relatert til portwin, vennligst ta kontakt med avdelingsleder herman låhne andersen, +47 97553103 eller på epost: herman.lahne.andersen@evry.com.    for spørsmål relatert til sls, vennligst ta kontakt med seksjonsleder geir andersen, +47 90844016 eller på epost: geir.andersen@evry.com.    vi ser frem til å høre fra deg!    
+
+
+
+
+
+
+sektor
+privat
+sted
+1360 fornebu
+bransje
+it
+stillingsfunksjon
+it utvikling / utvikler (generell),
+it utvikling / front-end
+
+
+
+nøkkelord
+
+            .net, utvikler, bank, finans
+
+
+
+rapportér annonse
+
+
+finn-kode
+138714734
+sist endret
+11. feb 2019 15:28
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -15594,108 +16089,6 @@ finn-kode
 140934928
 sist endret
 22. feb 2019 15:24
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-er du god på utvikling og liker utfordringer?
-
-
-
-arbeidsgiver
-trafsys as
-stillingstittel
-senior systemutvikler / systemutvikler
-sted
-bergen
-frist
-
-                14.03.2019
-varighet
-fast
-
-
-
-
-
-til videreutvikling av vår løsning for styring og overvåkning innenfor its (intelligente transportsystemer), trafvision, søker vi dyktige systemutvikler med stå-på vilje og godt humør.hos oss vil du inngå i et utviklingsteam som består av både front-end og back-end utviklere som jobber tett sammen. du vil ha store muligheter til å jobbe bredt og påvirke hvilke oppgaver du jobber med.vi er inne i en prosess der løsningen legges over på ny teknisk plattform og det innføres microservice og meldingsbasert arkitektur. din rolle vil primært være å jobbe med utvikling relatert til etablering av den nye arkitekturen. teknologier og verktøy som benyttes er blant annet:java, c++, java script, java servlets, jquery, reactwindows, linux, tomcatjenkins, maven, git, artifactory, sonarqubekafka, docker oracle, jdbcdu bør ha erfaring med flere av disse teknologiene og det er en fordel om du har erfaring med skyteknologier og/eller vmware. du må også beherske norsk og engelsk både muntlig og skriftlig.
-
-
-
-
-om arbeidsgiveren
-trafsys gruppen består av trafsys as i bergen og oppegård utenfor oslo, samt trafsys ab i stockholm. i tillegg har vi datterselskapet norphonic as som utvikler og produserer industrielle ip telefoner. trafsys leverer løsninger og produkter relatert til its (intelligent transport systems). vi er en av markedslederne innen vårt område med en høyt utdannet og tverrfaglig stab. for å kunne opprettholde vår posisjon er vi avhengig av å rekruttere personer som i tillegg til å være faglig dyktig, er ærgjerrig og full av pågangsmot med en positiv påvirkning på omgivelsene rundt seg.en av de viktigste forretningsdriverne for trafsys er vårt kontinuerlige utviklingsarbeid, hvor vi hele tiden har flere utviklingsprosjekt gående. i et av prosjektene samarbeider vi med norce (tidligere christian michelsen research).
-
-
-
-
-søknad merkes
-senior systemutvikler
-nettverk
-
-linkedin
-
-tiltredelse
-snarest
-sektor
-privat
-sted
-fjellsdalen 3,
-5155 bønes
-bransje
-it - programvare
-stillingsfunksjon
-it utvikling / utvikler (generell)
-
-
-
-nøkkelord
-
-            java, oracle, kafka, docker, react
-
-
-
-rapportér annonse
-
-
-finn-kode
-139317427
-sist endret
-1. feb 2019 13:01
 
 
 
@@ -22742,6 +23135,153 @@ kommentar til annonsen
 
 
 
+engasjert utviklerevangelist
+
+
+
+arbeidsgiver
+ambita as
+stillingstittel
+utviklerevangelist
+sted
+oslo, bergen
+frist
+
+                11.03.2019
+varighet
+fast
+
+
+
+
+
+ambita trenger en utviklerevangelist til å styrke vårt selvstendige api & dx team. ambita skal bli ledende på utvikleropplevelse, og for å oppnå det vil du få frie tøyler til å videreutvikle vår plattform, legge føringer for alle produktteam i ambita. du vil jobbe tett med techleads og arkitekter, i et fagmiljø der innsikt, innsats og kreativ tenkning verdsettes. vi jobber for det meste i java, react, play/spring boot og aws, og har høyt fokus på devops og serverless. vi forbedrer kontinuerlig stacken vår, og forventer at du blir med og styrer kursen mot enklere og bedre tjenester basert på aws plattformtjenester og åpne apier. hvem er du?du har sterke meninger om api-samfunnet og developer experience.du har solid erfaring med rest-prinsipper, verktøy og infrastruktur, gjerne i aws.du har visjoner om storskala graphql, api portaler, consumer driven contracts.du er flink til å forenkle og strukturere, er hands-on og får ting gjort.du er engasjert og engasjerende og trives godt i kundedialog og foran publikum. ambita er ledende på eiendomsteknologi, og våre apier og webkomponenter benyttes av de fleste fintech- og proptechaktører i norge. vi jobber kontinuerlig med nye tjenester basert på vårt rike datagrunnlag og omfattende nettverk, og driver spennende innovasjon både internt og eksternt i datterselskaper som alva technologies og boligmappa. vi har store ambisjoner fremover, og for å få til dette trenger vi flere til teamet vårt. er det deg? hva tilbyr vi?et fantastisk sted å jobbe, sertifisert av great place to worken stor og kompetent teknologiavdeling med over 40 ansattekolleger og kunder med høy kompetanse og høye ambisjonerinteressante faglige utfordringer og spennende produktutviklingsentrale og moderne lokaler i oslo og bergenfleksibel arbeidstid, ferie og overtidsbetaling - ingen timeføringsosialt og aktivt miljø, samlinger i inn- og utlandrom for og krav til aktiv kompetansebygging i tillegg til å sende oss din cv, ønsker vi at du skriver en søknad hvor du forteller litt om deg selv og om hvorfor du ønsker å jobbe hos oss. ser frem til å høre fra deg! alle henvendelser behandles fortrolig og konfidensielt.arbeidssted: bergen eller oslo søknader vurderes fortløpende 
+
+
+
+
+om arbeidsgiveren
+ambita as er et norges ledende eiendomsteknologiselskap som leverer digitaliseringsløsninger for eiendomsmarkedet. vi står bak flere sentrale løsninger som sikrer en effektiv og åpen bolighandel i norge. flere tusen brukere benytter ambitas tjenester hver dag i forbindelse med boligsalg eller byggeprosjekter. gjennom tett samarbeid med offentlig forvaltning og våre kunder, utvikler vi løsninger som gjør arbeidshverdagen for våre brukere enklere og mer effektiv.våre verdier "handlekraftig, utforskende og ansvarlig" motiverer oss til innsats og gode prestasjoner. vi har fokus på et godt arbeidsmiljø og er great place to work sertifisert. vi er 80 ansatte med hovedkontor i oslo og avdelingskontor i bergen. ambita hadde i 2017 en omsetning på 351 mill. ambita as eier også boligmappa as med 88,1 %, alva technologies med 58,56 % og supertakst med 13%.
+
+
+
+
+søknad merkes
+utviklerevangelist
+nettverk
+
+facebook
+linkedin
+
+tiltredelse
+snarest
+sektor
+privat
+sted
+henrik ibsensgt 100,
+0230 oslo,
+5014 bergen
+lønn
+etter avtale
+bransje
+eiendom,
+it
+stillingsfunksjon
+it utvikling / utvikler (generell)
+
+
+
+nøkkelord
+
+            utvikling, it, dx, api, teknologi
+
+
+
+
+
+
+
+
+
+                                        
+                                        (1/2)
+                                    
+
+
+
+
+
+
+                                        
+                                        (2/2)
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rapportér annonse
+
+
+finn-kode
+139115064
+sist endret
+28. jan 2019 15:41
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
 nytenkende og kreativ software engineer - senior
 
 
@@ -22809,109 +23349,6 @@ finn-kode
 140854378
 sist endret
 27. feb 2019 14:25
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-embedded systems engineers
-
-
-
-arbeidsgiver
-3d-radar
-stillingstittel
-embedded systems engineers
-sted
-trondheim
-frist
-
-                snarest
-varighet
-fast
-
-
-
-
-
-3d-radar is looking for creative embedded engineers with passion to explore new and enabling technologies. the candidates will be an important part of our cross-disciplinary r&d team in trondheim, improving our current product portfolio of embedded radar systems, and utilizing latest technology trends to develop the next generations of ground penetrating radar (gpr) systems. the positions will be located at our r&d headquarter in trondheim, reporting to the cto. fpga design engineerresponsibilities:design, validation and deployment of commercial fpga solutions for embedded systems.proof-of-concept studies based on recent fpga technology trends, such as soc, ai inference and rf integration.develop signal processing solutions for high-rate and real-time data acquisition.requirements:experience from commercial fpga system design.experience with high-rate signal processing and/or data acquisition.familiar with best practice vhdl design, verification and simulation methodologies.detailed understanding of fpga hardware architecture, testbench design, synthesis, and timing analysis. senior hardware design engineerresponsibilities:concept, design and development of embedded hardware, and fpga based embedded systems.development of mixed-signal high-rate embedded systems for rf acquisition and processing.work with suppliers, internal production, and testing to ensure high-quality and ruggedized system integration.support proof-of-concept and prototyping projects from concept to implementation, and validation.requirements:experience with developing fpga based embedded systems for high-rate sensor systems, e.g. seismic, radar, ultrasound, or video.experience with mixed-signal high-rate fpga systems, and familiar with rf design principles.familiar with ruggedization of electronics and embedded systems design for harsh environments.embedded software engineerresponsibilities:design and development of embedded software and os deployment on embedded devices.low-level fpga/cpu system integration, driver development, and bare-metal programming.development of production test framework and scripts for automated testing of rf components, embedded modules and complete systems.design and development of client-server applications with focus on server-side real-time processing of high-rate sensor data.requirements:familiar with the linux os framework, driver development, and deployment on embedded devices.c/c++ programming experience and scripting in python/bashexperience with board bring-up, including development and deployment of linux board support packages (bsp).familiar with diy and prototyping platforms such as arduino, raspberry pi, or esp32.
-
-
-
-
-om arbeidsgiveren
-3d-radar as is developing 3d ground penetrating radar systems for subsurface utility mapping, archaeology, humanitarian demining, road and bridge deck inspection. 3d-radar pioneered high-resolution 3d ground penetrating radar (3d gpr), and is now one of the global leaders and preferred instrument supplier for detecting and mapping underground infrastructure.
-
-
-
-
-nettverk
-
-linkedin
-
-sektor
-privat
-antall stillinger
-3
-sted
-klæbuveien 196b,
-7037 trondheim
-bransje
-elektronikk,
-it - maskinvare
-stillingsfunksjon
-ingeniør / elektronikk,
-it utvikling / utvikler (generell),
-ingeniør / kybernetikk
-
-
-
-nøkkelord
-
-            fpga, linux, embedded, c/c++, hardware
-
-
-
-rapportér annonse
-
-
-finn-kode
-140179299
-sist endret
-12. feb 2019 11:02
 
 
 
@@ -29488,6 +29925,174 @@ kommentar til annonsen
 
 
 
+forretningsanalytiker, bi og datavarehus, digitale løsninger
+
+
+
+arbeidsgiver
+norsk hussopp forsikring
+stillingstittel
+forretningsanalytiker, bi og datavarehus, digitale løsninger
+frist
+
+                22.03.2019
+varighet
+fast
+
+
+
+
+
+til nyopprettet spennende stilling som forretningsanalytiker søker vi en medarbeider med høyere utdannelse innen it og erfaring fra datavarehus og analytics. du er nysgjerrig og forretningsorientert og har evne til å gjennomføre utviklingsprosjekt i samarbeid med andre.   stillingen vil gi den rette personen store muligheter til å påvirke selskapets videre utvikling innenfor arbeidet med digitalisering, elektronisk samhandling og dataanalyse.   vi er i prosess for valg og implementering av nye løsninger innenfor selskapets forsikringsløsning, digital samhandling, økonomisystem og datavarehus. i tillegg vil stillingen også ha en sentral rolle i arbeidet med å overvåke og se forretningsmessige muligheter relatert til digitalisering og teknologisk utvikling og verdien av data.   ansvarsområder og arbeidsoppgaver ·         utvikling av datavarehusløsning og arkitektur ·         tilrettelegge for effektiv databehandling og datamodellering og analyse. ·         data integration: sql og etl ·         data kvalitet, master data management ·         støtte forretningsområdene i arbeidet med dataanalyser. bidra til å omgjøre data til innsikt for bedre beslutnings- og forretningsstøtte. ·         delta i utviklingsprosjekt med samarbeidspartnere ·         fagressurs innenfor ikt området kvalifikasjoner ·         høyere it faglig utdannelse ·         kunnskap innen systemarkitektur, datastrukturer, datafangst ·         erfaring fra business intelligence området; analyse, datamodellering, data science ·         erfaring fra ms office 365 og power bi, tableau eller lignende visualiseringsverktøy ·         prosjekterfaring ·         meget gode kommunikasjonsferdigheter skriftlig og muntlig, både norsk og engelsk   egenskaper ·         kvalitetsbevisst og nøyaktig ·         strukturert og selvgående med høy gjennomføringsevne ·         strategisk, med god forretningsforståelse ·         nysgjerrig og kreativ ·         har gode kommunikasjons- og samarbeidsevner vi tilbyr ·         en utfordrende og spennende arbeidshverdag i et godt arbeidsmiljø  ·         gode muligheter for faglig og personlig utvikling  ·         konkurransedyktige betingelser  ·         moderne lokaler sentralt i oslo
+
+
+
+
+om arbeidsgiveren
+norsk hussopp forsikring er det eneste forsikringsselskapet i norge som har spesialisert seg på forsikring av boliger mot råteskader og skadeinsekter. innen dette nisjeområdet er vi markedsleder og har et samarbeid med de fleste forsikringsselskapene i markedet. forsikringsbransjen forventer store endringer i årene som kommer drevet av teknologiendringer, og norsk hussopp forsikring skal videreutvikle virksomheten for å møte disse endringene.
+
+
+
+
+nettverk
+
+facebook
+
+sektor
+privat
+sted
+schweigaards gate 16,
+0191 oslo
+bransje
+bank, finans og forsikring
+stillingsfunksjon
+it utvikling / database,
+it utvikling / qa/testing,
+it utvikling / systemarkitekt
+
+
+
+nøkkelord
+
+            forretningsanalytiker, datavarehus, bi, digitale løsninger
+
+
+
+
+
+
+
+
+
+                                        
+                                        (1/5)
+                                    
+
+
+
+
+
+
+                                        
+                                        (2/5)
+                                    
+
+
+
+
+
+
+                                        
+                                        (3/5)
+                                    
+
+
+
+
+
+
+                                        
+                                        (4/5)
+                                    
+
+
+
+
+
+
+                                        
+                                        (5/5)
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rapportér annonse
+
+
+finn-kode
+140927147
+sist endret
+22. feb 2019 13:50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
 language analyst søkes for globetech irland
 
 
@@ -29557,152 +30162,6 @@ finn-kode
 140770492
 sist endret
 20. feb 2019 08:58
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-javautvikler med sans for devops og aws
-
-
-
-arbeidsgiver
-ambita as
-stillingstittel
-javautvikler
-sted
-oslo
-frist
-
-                11.03.2019
-varighet
-fast
-
-
-
-
-
-ambita trenger flere solide utviklere! du vil inngå i et smidig team med tett knytning til produkt og forretningsutvikling. du vil jobbe med utfordrende problemstillinger og ditt bidrag vil være tydelig både for kunder og utviklingen av ambita som selskap. vi jobber for det meste i java, react, play/spring boot og aws, og har høyt fokus på devops og serverless. vi forbedrer kontinuerlig stacken vår, og forventer at du blir med og styrer kursen mot enklere og bedre tjenester basert på aws plattformtjenester og åpne apier. hvem er du?du er en dyktig javautvikler som kan din solid og tdd, ci og di, rest og sql.du har erfaring med microservices på play framework eller spring boot.du har sansen for devops og infrastructure as code, gjerne med terraform og aws.du trives like godt på kommandolinja og i linux som i intellij.du har et reflektert forhold til teknisk gjeld og kvalitet og leverer på rett nivådu er flink til å forenkle og strukturere, er hands-on og får ting gjort. ambita er ledende på eiendomsteknologi, og våre apier og webkomponenter benyttes av de fleste fintech- og proptechaktører i norge. vi jobber kontinuerlig med nye tjenester basert på vårt rike datagrunnlag og omfattende nettverk, og driver spennende innovasjon både internt og eksternt i datterselskaper som alva technologies og boligmappa. vi har store ambisjoner fremover, og for å få til dette trenger vi flere til teamet vårt. er det deg? hva tilbyr vi?et fantastisk sted å jobbe, sertifisert av great place to worken stor og kompetent teknologiavdeling med over 40 ansattekolleger og kunder med høy kompetanse og høye ambisjonerinteressante faglige utfordringer og spennende produktutviklingsentrale og moderne lokaler i oslo og bergenfleksibel arbeidstid, ferie og overtidsbetaling - ingen timeføringsosialt og aktivt miljø, samlinger i inn- og utlandrom for og krav til aktiv kompetansebygging i tillegg til å sende oss din cv, ønsker vi at du skriver en søknad hvor du forteller litt om deg selv og om hvorfor du ønsker å jobbe hos oss. ser frem til å høre fra deg! alle henvendelser behandles fortrolig og konfidensielt.arbeidssted: oslosøknader vurderes fortløpende   
-
-
-
-
-om arbeidsgiveren
-ambita as er et norges ledende eiendomsteknologiselskap som leverer digitaliseringsløsninger for eiendomsmarkedet. vi står bak flere sentrale løsninger som sikrer en effektiv og åpen bolighandel i norge. flere tusen brukere benytter ambitas tjenester hver dag i forbindelse med boligsalg eller byggeprosjekter. gjennom tett samarbeid med offentlig forvaltning og våre kunder, utvikler vi løsninger som gjør arbeidshverdagen for våre brukere enklere og mer effektiv.våre verdier "handlekraftig, utforskende og ansvarlig" motiverer oss til innsats og gode prestasjoner. vi har fokus på et godt arbeidsmiljø og er great place to work sertifisert. vi er 80 ansatte med hovedkontor i oslo og avdelingskontor i bergen. ambita hadde i 2017 en omsetning på 351 mill. ambita as eier også boligmappa as med 88,1 %, alva technologies med 58,56 % og supertakst med 13%.
-
-
-
-
-søknad merkes
-javautvikler
-nettverk
-
-facebook
-linkedin
-
-tiltredelse
-snarest
-sektor
-privat
-sted
-henrik ibsensgt 100,
-0230 oslo
-lønn
-etter avtale
-bransje
-eiendom,
-it
-stillingsfunksjon
-it utvikling / utvikler (generell)
-
-
-
-nøkkelord
-
-            it, java, devops, aws
-
-
-
-
-
-
-
-
-
-                                        
-                                        (1/2)
-                                    
-
-
-
-
-
-
-                                        
-                                        (2/2)
-                                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rapportér annonse
-
-
-finn-kode
-139116203
-sist endret
-28. jan 2019 15:47
 
 
 
@@ -38684,6 +39143,129 @@ kommentar til annonsen
 
 
 
+utviklingssjef it
+
+
+
+arbeidsgiver
+jobzone as
+stillingstittel
+utviklingssjef it
+sted
+oslo
+frist
+
+                28.februar
+varighet
+fast
+
+
+
+
+
+et solid fagteam er godt i gang med vårt store prosjekt,  jobzone inn i fremtiden . vår ambisjon er at jobzone skal ligge foran og definere den digitale hverdagen i vår bransje. vi har en dyktig og engasjert it-avdeling hvor vi spiller på hverandres spisskompetanse og er opptatt av å være i forkant og gjøre hverandre gode. it-avdelingen består i dag av 13 personer som sitter på jobzone sitt hovedkontor, sentralt i nydalen.nå søker vi deg som vil være vår nye utviklingssjef til å lede utviklerteamet vårt - vil du være med på å knekke koden for hvordan vi skal lage de beste løsningene?arbeidsoppgaver:utvikling; nyutvikling, videreutvikling av våre kjerneprogrammer, både på desktop og på webpersonalansvar/faglig ansvar for fem utviklereplanlegge og lede scrum-møtertett samarbeid med vår interaksjonsdesignersystemarkitekturlede overgangen til azurekontakt med eksterne leverandørerønskede kvalifikasjoner;fordel om du er en full-stack utviklererfaring fra teamarbeid, helst scrumminimum 5 års erfaring fra utvikling, og helst med disse utviklingsspråkene/plattformene; azure, html, css, javascript rammeverk (eksempelvis react), .net, giterfaring med personalansvarbehersker norsk/svensk og engelskvi tilbyr et godt arbeidsmiljø med store muligheter for å påvirke. du får videreutviklet din kompetanse og får opplæring i form av kurs og konferanser. i jobzone har vi gode pensjonsordninger og fokus på arbeidsmiljø gjennom faglige og sosiale tilbud til våre ansatte.hvis dette er noe for deg eller noen du kjenner, ønsker vi å høre fra deg! har du faglige spørsmål så ta kontakt med vår it-direktør lasse ødegård på 934 33 473
+
+
+
+
+om arbeidsgiveren
+jobzone er det største norskeide bemanningsselskapet. vi betjener de fleste bransjer og et bredt spekter av yrkesområder innen privat og offentlig sektor. jobzone har en visjon om å være den beste arbeidsgiver i bemanningsbransjen. det innebærer nærhet og tett oppfølging av våre ansatte i oppdrag hos våre kunder. derfor har vi 40 lokale kontorer rundt om i norge som ivaretar vår viktige rolle som arbeidsgiver og rekrutteringspartner.
+
+
+
+
+omfang
+heltid
+tiltredelse
+etter avtale
+sektor
+privat
+lederkategori
+leder
+sted
+sandakerveien 114 b,
+0404 oslo
+lønn
+i følge avtale
+bransje
+internettbaserte tjenester,
+it,
+it - programvare
+stillingsfunksjon
+design / web,
+it utvikling / utvikler (generell)
+
+
+
+nøkkelord
+
+            azure, react/redux, javascript, sql, ledelse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rapportér annonse
+
+
+finn-kode
+139891295
+sist endret
+13. feb 2019 12:52
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
 senior c++ systemutvikler
 
 
@@ -38737,157 +39319,6 @@ finn-kode
 140650747
 sist endret
 19. feb 2019 10:04
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-er det mulig å endre karriere på 12 uker? vi vil hjelpe deg!
-
-
-
-arbeidsgiver
-academy
-stillingstittel
-accelerated learning
-sted
-oslo
-frist
-
-                snarest
-varighet
-fast
-
-
-
-
-            bli kjent med academic work norway as
-
-
-
-
-vi i academy søker nå deltakere til vårt første program i norge.informasjon om stillingen«jeg savnet noe konkret, noe der jeg faktisk kunne se hva jeg hadde fått til. it-bransjen fristet ettersom det finnes konkrete utfordringer der man i prinsippet kan løse alt – det eneste du behøver er å finne den smarteste måten å gjøre dette på» heidi, deltakeri norge vil det i 2030 trolig mangle over 25 000 mennesker med kompetanse innen ikt. vi står ovenfor en økende digitalisering, og arbeidsmarkedet skriker etter deg som vil utvikle, programmere og kode. på 12 uker gir vi deg muligheten til å tette gapet og vi gir deg en fast jobb. gjennom academy gir vi deg med rette evner og motivasjon, uten forkunnskaper innen it, en ettertraktet kompetanse i løpet av 12 uker. uavhengig av din tidligere bakgrunn og forkunnskaper er dette en spennende mulighet til å satse innen et nytt fagfelt. vi gir deg ikke bare utdannelse innen programmering, men også en fast jobb som it-konsulent.hva vil du jobbe med?etter 12 uker med intensiv og krevende utdanning vil du være klar for å bidra som junior utvikler i både små og store utviklingsprosjekt. dette vil innebære at du skal være med å designe, planlegge, beskrive, programmere og ikke minst kvalitetssikre datasystemer – dette i tett samarbeid med andre kolleger og systemutviklere. du vil få kjennskap til moderne teknologier og vil med det få forutsetninger til å arbeide med å utvikle løsninger for blant annet web og mobil, forretningslogikk, hvordan systemer samhandler og ikke minst hvordan systemer og løsninger vil bli seende ut.hvem vil du arbeide hos og hvilke problemstillinger vil du være med å løse?vårt søsterselskap, academic work, arbeider ut mot mer enn 200 selskaper som har behov for it- og programmeringskompetanse og det er hos en eller flere av disse selskapene du vil arbeide. det vil innebære at enkelte vil være med å utvikle fremtidens betalingsløsninger, andre vil bidra til digitalisering av byggebransjen, den tredje vil kanskje arbeide med utvikling av systemer for lager og logistikk og andre vil være med å digitalisere helse-norge. så enten du har lyst til å være med å digitalisere norge, arbeide som web-programmerer eller har lyst til å utvikle avanserte algoritmer vil academy hjepe deg på vei mot denne type oppgaver og problemstillinger – start med å ta testene for å se om du har det som skal til for å bidra til digitaliseringen av norge!vi søker deg somhar gode norsk- og engelskkunnskaper, både muntlig og skriftlig.har bestått samtlige innledende tester med fokus på evner.som person er du logisk anlagt og en problemløser. du er utholdende og motivert for å lære deg en ny kompetanse. du trenger ingen tidligere erfaring, men du må ha de rette evnene, personlige egenskapene og engasjementet til å påbegynne din nye karriere. rekrutteringsprosessen starter derfor med utvelgelsestestene som sørger for å avdekke om du har det som kreves. for å lykkes i konsulentrollen er det viktig at du har gode samarbeidsevner og at du enkelt kan tilpasse deg ulike team og personligheter. videre ser vi at du er komfortabel med problemløsning samt at du er fleksibel i henhold til arbeidsoppgaver og de varierte oppdragene ute hos våre kunder.praktisk informasjonrekrutteringsprosessen: vi arbeider utfra løpende utvalg der prosessen består av tester og to intervjuer. dersom du ønsker å øke sjansene dine for å få en plass i programmet, anbefaler vi deg å søke så raskt som mulig da plassene kan fylles opp før søknadsfristen utløper. du søker til academy ved å klikke på ”søk her” og deretter klikker du på testen øverst på landingssiden. vi går gjennom testresultatene fortløpende. deretter vi vi invitere de som består testene videre i rekrutteringsprosessen. har du spørsmål om academy og utdannelsen besvarer vi disse på e-post i løpet av kontortiden. vi tar ikke imot søknader via e-post dersom du ikke har fullført og bestått testene.  hva er academy?vi er overbeviste om at det er på høy tid med en ny type utdannelsesmodell. derfor har vi startet academy, en skole som tilbyr accelerated learning programs. vi forbereder og utdanner mennesker med de rette evnene og ambisjon for nye utfordringer og karriere. dette gjør vi ved å kombinere en utfordrende rekrutteringsprosess som vektlegger hva personer kan gjøre i morgen, og ikke hva de gjorde i går. i tillegg tilbyr vi en skreddersydd utdanningspakke som vi har utviklet sammen med noen av de beste lærerne innenfor deres respektive fagfelt. dette skaper et faglig miljø hvor de mest ambisiøse menneskene får muligheten til å oppnå sitt fulle potensiale. academy er en del av academic work og vi bygger fremtidens skole, i dag! 
-
-
-
-
-om arbeidsgiveren
-vi er overbeviste om at det er på høy tid med en ny type utdannelsesmodell. derfor har vi startet academy, en skole som tilbyr accelerated learning programs. vi forbereder og utdanner mennesker med de rette evnene og ambisjon for nye utfordringer og karriere. dette gjør vi ved å kombinere en utfordrende rekrutteringsprosess som vektlegger hva personer kan gjøre i morgen, og ikke hva de gjorde i går. i tillegg tilbyr vi en skreddersydd utdanningspakke som vi har utviklet sammen med noen av de beste lærerne innenfor deres respektive fagfelt. dette skaper et faglig miljø hvor de mest ambisiøse menneskene får muligheten til å oppnå sitt fulle potensiale. academy er en del av academic work og vi bygger fremtidens skole, i dag!
-
-
-
-
-søknad merkes
-an11155081
-nettverk
-
-facebook
-linkedin
-
-sektor
-privat
-antall stillinger
-15
-sted
-nydalsveien 33,
-0484 oslo
-bransje
-eiendom,
-juridiske tjenester,
-bank, finans og forsikring
-stillingsfunksjon
-ingeniør,
-it utvikling / utvikler (generell),
-konsulent
-
-
-
-nøkkelord
-
-            sommerjobb, oslo, koding, programmering, backend
-
-
-
-
-
-
-
-
-
-                                        
-                                        (1/2)
-                                    
-
-
-
-
-
-
-                                        
-                                        (2/2)
-                                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rapportér annonse
-
-
-finn-kode
-139695796
-sist endret
-18. feb 2019 11:14
 
 
 
@@ -47174,6 +47605,175 @@ kommentar til annonsen
 
 
 
+frontendutvikler/ux-spesialist med kommersiell teft
+
+
+
+arbeidsgiver
+synlighet as
+stillingstittel
+konsulent, performance marketing
+sted
+bergen, oslo, trondheim
+frist
+
+                15.03.2019
+varighet
+fast
+
+
+
+
+
+                digital markedsføring er i rask, kontinuerlig utvikling, noe som medfører økt krav til forståelse for skripting i automasjon av oppgaver, kobling av apier og datasett. det er også viktig å beherske javascript, jquery, html/html5 og css, og ulike cms-plattformer (wordpress, craft, mm.). samtidig er det viktig å kunne forstå våre kunders mål med den digitale tilstedeværelsen og kunne foreslå, og implementere, forbedringer i brukeropplevelsen som vil ta dem videre. vi skal derfor styrke vårt webanalyse & tech-team og ser nå etter et fleksibelt teknisk hode med brukeropplevelse i ryggen og glimt i øyet! i en arbeidshverdag hos oss vil det ikke være mangel på utfordringer; det er alltid noe som kan forbedres, utvikles eller effektiviseres. for å lykkes i rollen som teknisk/ux-spesialist er det viktig at du mestrer:-html5/css3-wordpress, craft, evt. andre aktuelle moderne cms-plattformer-javascript og eventuelt andre moderne rammeverk basert på js-api-forståelse og anvendelse av dette (feks. google apis)-det er en fordel om du har grunnleggende forståelse for python-det er også et ønske om at du har vært borti phpintern rådgivning og veiledningkundemøterkurs og workshops for våre kunderdu vil være en del av vårt team for webanalyse & tech. her vil det også være oppgaver som vil overlappe med din kompetanse, blant annet implementering av avanserte sporingsoppsett i googles sporingsportefølje (google analytics, google tag manager og gtag), samt implementering av a/b-testing og personalisering på kunders nettsteder (visual website optimizer). det sistnevnte krever god forståelse for frontend-utvikling.  det er klart fordelaktig om du har kjennskap til alt det som nevnes over, men ikke et krav. du vil hos oss få en innføring i samtlige verktøy vi bruker gjennom vårt training-program.vi ser etter deg som har;utdannelse på høyskole/universitetsnivå informasjonsvitenskap, informatikk el. lignende med gode resultaterteknisk legning og intuisjongod skriftlig og muntlig fremstillingsevne på norskeffektiv og velorganisert arbeidsstil, med øyne for detaljer og evne til å få ting gjennomført.opptatt av kvalitet og høyt nivå på ditt arbeidresultatorienterten utadvendt og kontaktskapende personlighet med “sosiale antenner”.brennende interesse for ryddig kode og effektivisering gjennom automasjon, samt en nysgjerrighet på digital markedsføring og nettmedier.dersom du snakker og skriver andre språk i tillegg til norsk, så er det svært interessant for oss. solide akademiske meritter kommer godt med i vår arbeidshverdag. er du i tillegg nysgjerrig, strukturert og god på å kommunisere, vil vi sette pris på din søknad!synlighetsteametvi er ikke redd for å omtales som nerder med sosiale antenner. i praksis betyr det at vi har en systematisk tilnærming til vårt fag. vi lanserer hypoteser, tester og optimaliserer. når dette kombineres med høyt arbeidstempo, kommer resultatene! det er dette som er“performance marketing”!vi er et lekent miljø som er opptatt av at alle skal trives på jobb og at alle skal utvikle seg faglig. synlighetere har en uvanlig stor nysgjerrighet. å tilegne seg og å dele kunnskap ligger i dna-et vårt. ikke bare fordi det gagner kundene, men fordi våre kolleger forventer å være en del av norges beste performance marketing miljø og lære masse fra eksperter innen ulike disipliner; eksempelvis søkemotoroptimalisering, innholdsmarkedsføring, annonsering, konverteringsoptimalisering eller webanalyse.
+
+
+
+
+om arbeidsgiveren
+synlighet as er et ledende norsk performancebyrå. gjennom fokus på søkemotormarkedsføring og sosiale mediekanaler, har vi som mål å være norges fremste rådgivere for effektiv datadreven moderne markedsføring. selskapet har 55 ansatte, med kontorer i sentrum av trondheim, bergen, oslo og malmø. blant mer enn 300 aktive kunder, betjener vi ledende markedsaktører som pfizer, det norske veritas, sintef, ntnu,sparebank 1 midtnorge, selvaag bygg, bilextra og tysse.
+
+
+
+
+nettverk
+
+facebook
+linkedin
+
+sektor
+privat
+sted
+møllendalsveien 1,
+5009 bergen
+bransje
+markedsføring og annonsering
+stillingsfunksjon
+it utvikling / front-end,
+it utvikling / utvikler (generell)
+
+
+
+nøkkelord
+
+            webanalyse, digitalmarkedsføring, front-end, it, ux
+
+
+
+
+
+
+
+
+
+                                        
+                                        (1/5)
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+                                        (3/5)
+                                    
+
+
+
+
+
+
+                                        
+                                        (4/5)
+                                    
+
+
+
+
+
+
+                                        
+                                        (5/5)
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rapportér annonse
+
+
+finn-kode
+140421917
+sist endret
+27. feb 2019 20:14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips en venn om denne annonsen
+
+
+mottakers e-post
+
+
+
+kommentar til annonsen
+
+
+
+
+
+                    vi må be om at du logger deg inn for å tipse en venn
+                
+
+
+
+
+
+
 totalansvar for it i et stort selskap under etablering
 
 
@@ -47239,134 +47839,6 @@ finn-kode
 140403123
 sist endret
 15. feb 2019 14:15
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-protan as søker en applikasjonsforvalter it og en it support tekniker
-
-
-
-arbeidsgiver
-protan as
-stillingstittel
-applikasjonsforvalter it og it support tekniker
-sted
-drammen
-frist
-
-                snarest
-varighet
-fast
-
-
-
-
-
-applikasjonsforvalter itprotan it har ansvaret for å utvikle, forvalte og drifte konsernets erp-system (m3) og tilhørende applikasjoner som støtter opp mot erp løsningen. applikasjonsforvalter vil i nært samarbeid med de ulike forretningsområdene i protan, sammen med it-sjef, bidra til å øke utnyttelsen av vårt erp-system ytterligere.vi søker en person som vil være med i et it team som ønsker å være en bidragsyter for forretningen slik at de når målene de har satt.du vil stå for opplæring av intern it avdeling/selskapet og utvikle vår applikasjonsendringsløsning.ditt overordnede ansvar vil være å forvalte de viktigste it-applikasjonene og sørge for best mulig bruk av våre applikasjoner.du motiveres av muligheten til å påvirke bedriftens digitale løp.  det er viktig at du evner å ta styring i etablering av rutiner og prosesser.som person er du robust, strukturert og systematisk med høy gjennomføringsevne og pågangsmot.vi kan tilby deg:utvikling og fremtidsrettede løsningerforvaltning av eksisterende applikasjoner og rammeverkkundesamarbeid (internt og eksternt) - evne å omsette bruker- og forretningsbehov til gode løsningerutfordrende arbeidsoppgaver, faglig utvikling og dyktige kollegaerkonkurransedyktige betingelserunik mulighet til å påvirke faglig innhold i stillingenarbeid i et internasjonalt og markedsledende konsern i stor positiv utviklingstor frihet under ansvar it support teknikerit support er vårt ansikt ut mot interne og eksterne brukere.  vi søker etter en ny dyktig medarbeider som kan hjelpe oss med å holde våre brukere fornøyde.du vil veksle mellom førstelinje og andrelinje brukerstøtte, og naturlig delta i oppbygging og videreutvikling av enhetens kunnskapsbase.  du vil også kunne delta i en del prosjekter ved behov og gjennomføre opplæring av applikasjonene som vi benytter.vi søker en person som vil være med i et it team som ønsker å være en bidragsyter for forretningen slik at de når målene de har satt.du følger prosedyrer og bruker saksbehandlingssystemet aktivt, å dokumentere det du gjør er noe du tar som en selvfølge.du motiveres av muligheten til å påvirke bedriftens digitale løp.  det er viktig at du evner å ta styring i etablering av rutiner og prosesser.som person er du robust, strukturert og systematisk med høy gjennomføringsevne og pågangsmot.vi kan tilby degutfordrende arbeidsoppgaver, faglig utvikling og dyktige kollegaerkonkurransedyktige betingelserunik mulighet til å påvirke faglig innhold i stillingenarbeid i et internasjonalt og markedsledende konsern i stor positiv utviklingstor frihet under ansvar 
-
-
-
-
-om arbeidsgiveren
-protan er et norsk industrikonsern som er verdensledende innen membranteknologi. bedriften utvikler og produserer membraner, tak-systemer, ventilasjonssystemer og tekniske tekstiler. omsetningen var samlet på over 1,6 milliarder i 2018, og selskapet har 750 ansatte i 15 land.hovedkontoret ligger i drammen. det største forretningsområdet er tak og membraner. i tillegg leverer protan høykvalitetsmembraner for våtrom og terrasser, og de gjennomfører radonsikring for nybygg og rehabilitering. det er også utviklet spesialløsninger for designtak, cool roof og grønne tak.
-
-
-
-
-søknad merkes
-it
-nettverk
-
-facebook
-linkedin
-
-tiltredelse
-i henhold til nærmere avtale
-sektor
-privat
-antall stillinger
-2
-sted
-baches vei 1,
-3413 lier
-lønn
-i henhold til avtale
-bransje
-industri og produksjon,
-bygg og anlegg
-stillingsfunksjon
-it drift og vedlikehold / it-support,
-it drift og vedlikehold / drift/operations,
-it utvikling / utvikler (generell)
-
-
-
-nøkkelord
-
-            it, m3
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rapportér annonse
-
-
-finn-kode
-139610592
-sist endret
-25. feb 2019 09:28
 
 
 
@@ -53934,356 +54406,6 @@ finn-kode
 140272458
 sist endret
 13. feb 2019 14:57
-
-
-
-
-
-
-
-
-
-
-    
-    .extended-profile-container .clickable-for-collapsible {
-        cursor: pointer;
-    }
-    .extended-profile-container.non-collapsible .clickable-for-collapsible {
-        cursor: inherit;
-    }
-    .extended-profile-container.non-collapsible .plus-icon {
-        display: none;
-    }
-    .extended-profile-container .expandable-area {
-        display: none;
-    }
-    .extended-profile-container.non-collapsible .expandable-area,
-    .extended-profile.open .expandable-area {
-        display: block;
-    }
-    .extended-profile-container.collapsible .hide-collapsible {
-        display: none;
-    }
-    .extended-profile-container.collapsible .hide-collapsible {
-        display: none;
-    }
-    .extended-profile-container.collapsible .company-logo-container {
-        padding-top: 45px;
-    }
-    .extended-profile-container .company-logo-top-container {
-        height: 45px;
-    }
-    .extended-profile-container .company-logo-container .company-logo {
-        
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .extended-profile-container.collapsible .company-logo-container .company-logo {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .extended-profile-container.non-collapsible .company-logo-container {
-        display: none;
-    }
-
-
-    
-    .extended-profile .extended-profile-plus-container {
-        position: relative;
-    }
-    .extended-profile .plus-icon {
-        position: absolute;
-        right: 10px;
-        top: 9px;
-    }
-    .extended-profile.open .plus-icon .line-y {
-        display: none;
-    }
-    .extended-profile a.button.actionlink {
-        display: block;
-    }
-    .extended-profile ul.last-non-bordered li:last-child {
-        border-bottom: none;
-    }
-
-    
-    .extended-profile {
-        background-color: #9acaeb;
-        color: #ffffff;
-    }
-    .extended-profile a {
-        color: #ffffff;
-    }
-    .extended-profile .extended-profile-logo-container {
-        background-color: ;
-        color: ;
-        text-align: center;
-    }
-
-        .plus-icon svg .circle { fill: #ffffff;       }
-        .plus-icon svg .line   { fill: #62b3e5; }
-
-    .extended-profile .extended-profile-slogan-container {
-        background-color: #62b3e5;
-        color: #ffffff;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        padding: 12px 5px;
-    }
-    .extended-profile .contact img {
-        height: 85px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-    }
-    .extended-profile .contact .name {
-        margin-top: 5px;
-    }
-    .extended-profile .contact .title,
-    .extended-profile .followers {
-        color: rgba(255, 255, 255);
-    }
-    .extended-profile ul li {
-        border-bottom-color: rgba(255, 255, 255, 0.2);
-    }
-    .extended-profile a.button.actionlink {
-        background-color: #62b3e5;
-        background: #62b3e5;
-        border-color: #62b3e5;
-        color: #ffffff;
-    }
-    .extended-profile a.button.actionlink:hover {
-        background-color: #ffffff;
-        color: #62b3e5;
-    }
-    .extended-profile .extended-profile-box {
-        background-color: #ffffff;
-        color: #9acaeb;
-    }
-    .extended-profile .extended-profile-box a {
-        color: #9acaeb;
-    }
-
-    .extended-profile-background {
-        background-position: center;
-        background-size: cover;
-        background-image: url('https://images.finncdn.no/dynamic/1280w/2018/9/vertical-5/19/3/914/04b/30-/bbf/d-1/1e8/-b6/0a-/b78/b0e/65b/353_1863820866.jpg');
-        padding-top: 38.27%;
-
-    }
-
-    @media (max-width: 767px) {
-
-        /*
-            a hack setting these border colors to something similar to the body background. this
-            will not work well when changing global styling :(
-        */
-        .non-collapsible .extended-profile,
-        .extended-profile.open {
-            border-bottom: 3px solid #e9eff5;
-        }
-        .non-collapsible .extended-profile {
-            border-top: 3px solid #e9eff5;
-        }
-
-    }
-
-
-
-
-
-
-
-
-ansvar fra første stund ! 
-
-
-les mer.
-
-
-
-
-
-
-
-
-
-
-
-les om arbeidsplassen
-
-
-
-
-
-                    flere stillinger
-                        
-
-studenter og talenter
-bli kjent med oss
-
-følg oss på linkedin
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tips en venn om denne annonsen
-
-
-mottakers e-post
-
-
-
-kommentar til annonsen
-
-
-
-
-
-                    vi må be om at du logger deg inn for å tipse en venn
-                
-
-
-
-
-
-
-brenner du for å bygge, deploye, teste og levere programvare? da er dette rollen du har ventet på!
-
-
-
-arbeidsgiver
-tieto norway as
-stillingstittel
-customer support specialist
-sted
-oslo
-frist
-
-                snarest
-varighet
-fast
-
-
-
-
-            bli kjent med tieto norge
-
-
-
-
-tieto capital markets leverer spesialiserte løsninger til verdipapirmarkedet i norden. våre kunder er de fremste aktørene innen aksjehandel, fondshandel, pensjon og livsforsikring. det pågår en rivende utvikling i markedet, med store krav til våre systemer. vi fortsetter fremgangen og søker nå etter flere teammedlemmer til å støtte våre kunder.noen av arbeidsoppgavene:bygge, deploye, teste og levere programvare.teste og verifisere nye løsninger og feilrettinger.oppgradere systemer hos kunderproblemløsing - feilsøking, feilretting, opplæring og dokumentering. en rolle man vokser i, både personlig og daglig. sentral i å sikre fornøyde kunderkompetansekrav:formell bakgrunn fra høgskole/universitet innen fagene datateknikk/informatikkdatabase-kunnskap, sql / ms sql / postgresql / oraclehar god muntlig og skriftlig fremstillingsevne på norsk og engelskfordel med kunnskap om eller interesse for finans/ økonomi/ regnskapfordel med erfaring fra deployment og testing av programvarepersonlige egenskaper:du liker problemanalyse og problemløsningnysgjerrig og analytiskpositiv, gode kommunikasjonsevner, godt humør/ståpå-vilje og –evne.du jobber raskt, effektivt og strukturertdu jobber godt selvstendig, men har lyst til å være med å bygge et bra teamhva kan vi tilby?du vil lære deg hele verdikjeden for verdipapirerdu vil jobbe med svært erfarne og dyktige kollegerdu vil være med å bygge et lagmeget gode pensjons- og forsikringsordningermeget gode karrieremuligheter, i tieto capital markets, men også i tieto forøvrig, som er nordens største it-foretak, med virksomhet i også i mange andre land i verden
-
-
-
-
-om arbeidsgiveren
-tieto er nordens største it-tjenesteselskap med sterk tilstedeværelse og leveringsevne i det globale markedet. tieto har ca. 15 000 ansatte i mer enn 20 land og omsetter for 1,5 milliarder euro. vi leverer helhetlige it-løsninger til både privat og offentlig sektor som omfatter hele livssyklusen. i tieto fokuserer vi på langsiktige kunderelasjoner. vår virksomhet er bygget på bransjekunnskap, forståelse for kundenes prosesser, teknisk kompetanse hos våre konsulenter, samt egne produkter og tjenester. vi er her først og fremst for våre kunder. i tieto synes vi det er spennende å jobbe i skjæringspunktet mellom teknologi og utvikling. våre banebrytende it-innovasjoner og -tjenester hjelper kundene våre, i privat og offentlig sektor, med å skape nye forretnings- og tjenestemuligheter, og å forutse bransjeendringer som gir kundene et konkurranseforsprang. tieto tilbyr full live cycle management, hvilket innebærer alt ifra applikasjonsforvaltning, bedrifts- og prosesstjenester, bedriftsapplikasjoner, forretnings- og it konsulenttjenester, front-end løsninger, industrielt internett, informasjonshåndtering, infrastrukturløsninger og tjenester, systemutvikling og testtjenester.
-
-
-
-
-nettverk
-
-linkedin
-
-tiltredelse
-etter avtale
-sektor
-privat
-sted
-karenslyst allé 53,
-0279 oslo
-bransje
-it,
-it - programvare,
-bank, finans og forsikring
-stillingsfunksjon
-it drift og vedlikehold / it-support,
-it utvikling / qa/testing,
-it utvikling / utvikler (generell)
-
-
-
-nøkkelord
-
-            oracle, deploy, test, sql
-
-
-
-
-
-
-
-
-
-                                        
-                                        (1/3)
-                                    
-
-
-
-
-
-
-                                        
-                                        (2/3)
-                                    
-
-
-
-
-
-
-                                        
-                                        (3/3)
-                                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-rapportér annonse
-
-
-finn-kode
-140271775
-sist endret
-13. feb 2019 14:45
 
 
 
