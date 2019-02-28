@@ -9,29 +9,30 @@ import threading
 
 url_part = 'https://www.finn.no'
 
+'''
+    Thread-class used to scrape pages faster.
+    It will be given the url to a page, then it go through all the links
+    saving the text from all ads in class variables.
+'''
 
-class myThread(threading.Thread):
-    def __init__(self, threadID, page, text, links):
+
+class MyThread(threading.Thread):
+    def __init__(self, threadID, page):
         threading.Thread.__init__(self)
         self.threadID = threadID
         self.page = page
-        self.text = text
-        self.links = links
+        self.text = ''
+        self.links = []
 
     def run(self):
-        print("Starting thread " + self.threadID)
+        print("Starting thread", self.threadID)
         for link in self.page:
             url = url_part + link['href']
-            threadLock.acquire()
             self.links.append(url)
-            threadLock.release()
             soup = soup_from_page(url)
-            threadLock.acquire()
             self.text += text_from_soup(soup)
-            threadLock.release()
+        print("Thread", self.threadID, "is done!")
 
-
-threadLock = threading.Lock()
 
 '''
     Goes through all the found pages on finn
@@ -45,7 +46,7 @@ def iterate_pages(pages):
     threads = []
     for page in pages:
         counter += 1
-        thread = myThread(counter, page, text, links)
+        thread = MyThread(counter, page)
         threads.append(thread)
         thread.start()
         # print("Getting text from page", counter)
@@ -54,8 +55,13 @@ def iterate_pages(pages):
         #     links.append(url)
         #     soup = soup_from_page(url)
         #     text += text_from_soup(soup)
+    # Waiting for all threads to finish
     for t in threads:
         t.join()
+    # Collecting the data from all threads
+    for t in threads:
+        links.extend(t.links)
+        text += t.text
     links_to_file(links)
     return text
 
