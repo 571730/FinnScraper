@@ -189,7 +189,7 @@ def text_til_fil():
     # links_to_file(links_all_pages)
     print('Found', len(links_all_pages), 'pages of IT job listings!')
     text_all_ads = iterate_pages(links_all_pages)
-    with open("Output.txt", "w") as text_file:
+    with open("Output.txt", "w", encoding="utf-8") as text_file:
         print(f"{text_all_ads}", file=text_file)
 
 
